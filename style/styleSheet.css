@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.Header {
+    text-align: center;
+    background: #907fa4;
+    height: 50px;
+    width: 100%; 
+    padding:0px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+div.Header-box{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+div.Header-text1 {
+    height:auto;
+    width:auto;
+    font-size:40px;
+    float:left;
+}
+
+div.Semester {
+    float:right;
+    font-size:40px;
+}
