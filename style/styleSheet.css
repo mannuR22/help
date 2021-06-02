@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
+    background-color:#020205;
 }
 
 div.Header {
     text-align: center;
-    background: #907fa4;
-    height: 50px;
-    width: 100%; 
-    padding:0px;
+    background: #191919;
+    height: auto;
+    width: 100%;
+    padding: 0px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
 }
 
 div.Header-box{
@@ -19,15 +20,62 @@ div.Header-box{
     height: auto;
     margin: 0 auto;
     text-align: center;
+    
+}
+
+img.logo {
+    height: auto;
+    width: 70px;
+    margin: 0 auto;
+    
 }
 div.Header-text1 {
-    height:auto;
-    width:auto;
-    font-size:40px;
-    float:left;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    float: left;
+    padding: 1%;
+    color:aliceblue;
+    font-family: 'Noto Sans', sans-serif;
+    display:blcok;
 }
 
 div.Semester {
-    float:right;
-    font-size:40px;
+    float: right;
+    font-size: 40px;
+    padding: 14px;
+    color:aliceblue;
+}
+
+img.fb {
+    height: auto;
+    width: 40px;
+    padding: 18px;
+    float: right;
+}
+img.wa {
+    height: auto;
+    width: 40px;
+    padding: 18px;
+    float: right; 
+}
+div.social-media {
+    float: right;
+}
+
+
+div#disp-img {
+    background-color: white;
+    height: auto;
+    width:100%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+img.quotes {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    display:block;
 }

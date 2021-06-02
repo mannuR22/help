@@ -3,22 +3,96 @@
   
   <head>
     <meta charset="utf-8">
-    <title>Posion</title>
+    <title>Black-Cat-Edu</title>
     <link rel="stylesheet" type="text/css" href="style/styleSheet.css">
   </head>
 
   <body style="margin:0 auto;padding:0px;">
 
     <div class="Header">
-
       <div class="Header-box">
-
-        <div class="Header-text1">Black Cat Help</div>
-        <div class="Semester">Semester: 2</div>
-
+        <div class="Header-text1">Black Cat Education</div>
+        <img class="fb" src="images/fb.png">
+        <img  class="logo" src="images/black-cat-logo.png">
+        <img class="wa" src="images/wa.png">
       </div>
-      
+      <div style="width:100%;height:6px;background-color: #c19898;"></div>
+
     </div>
+    <section>
+      <div id="disp-img">
+            <img id="imgq1" class="quotes" src="images/q1.png">
+            <img class="quotes" src="images/q2.png">
+            <img class="quotes" src="images/q3.png">
+            <img class="quotes" src="images/q4.png">
+            <img class="quotes" src="images/q5.png">
+            <img class="quotes" src="images/q6.png">
+      </div>
+      <script>
+        var setDivHeight = document.getElementById("disp-img");
+        var imgheight = document.getElementById("imgq1");
+
+        setDivHeight.style.height = imgheight.height + "px";
+
+      </script>
+      <script>
+        startImageTransition();
+  
+        function startImageTransition() {
+            var images = document.getElementsByClassName("quotes");
+  
+            for (var i = 0; i < images.length; ++i) {
+                images[i].style.opacity = 1;
+            }
+  
+            var top = 1;
+  
+            var cur = images.length - 1;
+  
+            setInterval(changeImage, 5000);
+  
+            async function changeImage() {
+  
+                var nextImage = (1 + cur) % images.length;
+  
+                images[cur].style.zIndex = top + 1;
+                images[nextImage].style.zIndex = top;
+  
+                await transition();
+  
+                images[cur].style.zIndex = top;
+  
+                images[nextImage].style.zIndex = top + 1;
+  
+                top = top + 1;
+  
+                images[cur].style.opacity = 1;
+                
+                cur = nextImage;
+  
+            }
+  
+            function transition() {
+                return new Promise(function(resolve, reject) {
+                    var del = 0.01;
+  
+                    var id = setInterval(changeOpacity, 10);
+  
+                    function changeOpacity() {
+                        images[cur].style.opacity -= del;
+                        if (images[cur].style.opacity <= 0) {
+                            clearInterval(id);
+                            resolve();
+                        }
+                    }
+  
+                })
+            }
+        }
+    </script>
+    </section>
+
+    <div style="width:100%;height:6px;background-color: #c19898;"></div>
 
     <section>
       <div class="intro">
