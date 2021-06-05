@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 body {
     margin: 0px;
     padding: 0px;
-    background-color:#020205;
+    background-color: #191919;
 }
 
 div.Header {
@@ -78,4 +78,35 @@ img.quotes {
     height: auto;
     width: 100%;
     display:block;
+}
+.type-row-1 {
+
+    border: 1px solid #c19898;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 32px;
+    color: #c19898;
+    font-family: 'Oswald', sans-serif;
+
+}
+.type-row-2 {
+    height: 20px;
+}
+
+div.subjects {
+    padding-top: 121px;
+}
+
+.horizontal-rule {
+    width:100%;
+    height:2px;
+    background-color: #c19898;
+}
+.anchor {
+    text-decoration: none;
+    color: #c19898;
 }
