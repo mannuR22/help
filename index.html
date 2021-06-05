@@ -20,6 +20,7 @@
 
     </div>
     <section>
+      <div class="allblack"></div>
       <div id="disp-img">
             <img id="imgq1" class="quotes" src="images/q1.png">
             <img class="quotes" src="images/q2.png">
@@ -28,17 +29,23 @@
             <img class="quotes" src="images/q5.png">
             <img class="quotes" src="images/q6.png">
       </div>
+
       <script>
-        function resizer() {
+        function reSize() {
           var setDivHeight = document.getElementById("disp-img");
+
           var imgHeight = document.getElementById("imgq1");
-          setDivHeight.style.height = imHeight.height + 'px';
+          
+          setDivHeight.style.height = imgHeight.height + "px";
+          
         }
 
-        window.addEventListener("resize", resizer);
+        window.addEventListener("resize", reSize);
 
-        resizer()
+        reSize();
+           
       </script>
+
       <script>
         startImageTransition();
   
@@ -93,10 +100,9 @@
                 })
             }
         }
-    </script>
+      </script>
+    <div class="allblack" style="border-bottom: 2px solid #c19898"></div>
     </section>
-
-    <div class="horizontal-rule"></div>
 
     <section>
       <div class="subjects">
