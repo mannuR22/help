@@ -32,18 +32,6 @@
 
     </div>
 
-
-    <section>
-      <div class="allblack"></div>
-      <div id="disp-img">
-            <img id="imgq1" class="quotes" src="images/q1.png">
-            <img class="quotes" src="images/q2.png">
-            <img class="quotes" src="images/q3.png">
-            <img class="quotes" src="images/q4.png">
-            <img class="quotes" src="images/q5.png">
-            <img class="quotes" src="images/q6.png">
-      </div>
-
       <script>
         function reSize() {
           var setDivHeight = document.getElementById("disp-img");
@@ -52,112 +40,61 @@
           
           setDivHeight.style.height = imgHeight.height + "px";
           
-        }
-        reSize();
-        window.addEventListener("resize", reSize);      
+        }  
+        window.addEventListener("resize", reSize); 
+        reSize();     
       </script>
 
-      <script>
-        startImageTransition();
-  
-        function startImageTransition() {
-            var images = document.getElementsByClassName("quotes");
-  
-            for (var i = 0; i < images.length; ++i) {
-                images[i].style.opacity = 1;
-            }
-  
-            var top = 1;
-  
-            var cur = images.length - 1;
-  
-            setInterval(changeImage, 5000);
-  
-            async function changeImage() {
-  
-                var nextImage = (1 + cur) % images.length;
-  
-                images[cur].style.zIndex = top + 1;
-                images[nextImage].style.zIndex = top;
-  
-                await transition();
-  
-                images[cur].style.zIndex = top;
-  
-                images[nextImage].style.zIndex = top + 1;
-  
-                top = top + 1;
-  
-                images[cur].style.opacity = 1;
-                
-                cur = nextImage;
-  
-            }
-  
-            function transition() {
-                return new Promise(function(resolve, reject) {
-                    var del = 0.01;
-  
-                    var id = setInterval(changeOpacity, 50);
-  
-                    function changeOpacity() {
-                        images[cur].style.opacity -= del;
-                        if (images[cur].style.opacity <= 0) {
-                            clearInterval(id);
-                            resolve();
-                        }
-                    }
-  
-                })
-            }
-        }
-      </script>
-    <div class="allblack" style="border-bottom: 2px solid #c19898"></div>
     </section>
 
-    <section>
+    <div style="width:100%; height: auto; text-align: center; margin: 0 auto;">
+      <center>
       <div class="subjects">
-        <table align="center">
-          <tbody>
-            
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Basic Electronics Engg</a></td>
-            </tr>
 
-            <tr>
-              <td class="type-row-2"></td>
-            </tr>
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Basic Mechanical Engg</a></td>
-            </tr>
-            <tr>
-              <td class="type-row-2"></td>
-            </tr>
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Engineering Graphics</a></td>
-            </tr>
-            <tr>
-              <td class="type-row-2"></td>
-            </tr>
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Environmental Studies</a></td>
-            </tr>
-            <tr>
-              <td class="type-row-2"></td>
-            </tr>
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Language Lab & Seminars</a></td>
-            </tr>
-            <tr>
-              <td class="type-row-2"></td>
-            </tr>
-            <tr>
-              <td class="type-row-1"><a class="anchor" href="">Mathematics-II</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <center>
+          <table align="center" style="margin: 0 0 auto">
+            <tbody>
+            
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Basic Electronics Engg</a></td>
+              </tr>
+
+              <tr>
+                <td class="type-row-2"></td>
+              </tr>
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Basic Mechanical Engg</a></td>
+              </tr>
+              <tr>
+                <td class="type-row-2"></td>
+              </tr>
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Engineering Graphics</a></td>
+              </tr>
+              <tr>
+                <td class="type-row-2"></td>
+              </tr>
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Environmental Studies</a></td>
+              </tr>
+              <tr>
+                <td class="type-row-2"></td>
+              </tr>
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Language Lab & Seminars</a></td>
+              </tr>
+              <tr>
+                <td class="type-row-2"></td>
+              </tr>
+              <tr>
+                <td class="type-row-1"><a class="anchor" href="">Mathematics-II</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+        </div>
+      </center>
+    </div>
     
     <footer>
       
