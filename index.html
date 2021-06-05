@@ -3,22 +3,37 @@
   
   <head>
     <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black-Cat-Edu</title>
     <link rel="stylesheet" type="text/css" href="style/styleSheet.css">
   </head>
 
   <body style="margin:0 auto;padding:0px;">
 
-    <div class="Header">
-      <div class="Header-box">
-        <div class="Header-text1">Black Cat Education</div>
-        <img class="fb" src="images/fb.png">
-        <img  class="logo" src="images/black-cat-logo.png">
-        <img class="wa" src="images/wa.png">
+    <div class="Header" id="header-div">
+
+      <div class="Header-box" id="Header-box">
+        <table style="border-spacing: 0px;" align="center">
+          <tbody>
+            <tr>
+              <td><div><img class="logo" id="logo" src="images/black-cat-logo.png"></div></td>
+              <td><div class="Header-text1" id="logo-text">Black Cat Help</div></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <script>
+          
+          document.getElementById("header-div").style.height = (document.getElementById("logo").height + 0) + 'px';
+          document.getElementById("Header-box").style.height = (document.getElementById("logo").height + 0) + 'px';
+          document.getElementById("Header-text1").style.height = (document.getElementById("logo").height + 0) + 'px';
+        </script>
+
       </div>
-      <div class="horizontal-rule"></div>
 
     </div>
+
+
     <section>
       <div class="allblack"></div>
       <div id="disp-img">
@@ -39,11 +54,8 @@
           setDivHeight.style.height = imgHeight.height + "px";
           
         }
-
-        window.addEventListener("resize", reSize);
-
         reSize();
-           
+        window.addEventListener("resize", reSize);      
       </script>
 
       <script>
