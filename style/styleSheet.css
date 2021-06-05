@@ -8,7 +8,7 @@ body {
 
 div.Header {
     text-align: center;
-    background: #191919;
+    background: black;
     width: 100%;
     padding-top: 8px;
     padding-bottom: 10px;
@@ -26,7 +26,7 @@ div.Header-box{
 
 img.logo {
     height: auto;
-    width: 70px;
+    width: 60px;
     margin: 0 auto;
     display:inline-block;
     
@@ -34,34 +34,11 @@ img.logo {
 div.Header-text1 {
     height: auto;
     width: auto;
-    font-size: 30px;
+    font-size: 25px;
     padding: 14px;
     color:aliceblue;
     font-family: 'Noto Sans', sans-serif;
     display:inline-block;
-}
-
-div.Semester {
-    float: right;
-    font-size: 40px;
-    padding: 14px;
-    color:aliceblue;
-}
-
-img.fb {
-    height: auto;
-    width: 40px;
-    padding: 18px;
-    float: right;
-}
-img.wa {
-    height: auto;
-    width: 40px;
-    padding: 18px;
-    float: right; 
-}
-div.social-media {
-    float: right;
 }
 
 
@@ -80,18 +57,16 @@ img.quotes {
     display:block;
 }
 .type-row-1 {
-
     border: 1px solid #c19898;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 13px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 14px;
     text-align: center;
-    font-size: 32px;
+    font-size: 25px;
     color: #c19898;
     font-family: 'Oswald', sans-serif;
-
 }
 .type-row-2 {
     height: 20px;
@@ -99,6 +74,9 @@ img.quotes {
 
 div.subjects {
     padding-top: 121px;
+    padding-bottom: 121px;
+    width: 80%;
+    text-align: center;
 }
 
 .horizontal-rule {
@@ -109,9 +87,4 @@ div.subjects {
 .anchor {
     text-decoration: none;
     color: #c19898;
-}
-div.allblack {
-    width: 100%;
-    background: black;
-    height:40px;
 }
