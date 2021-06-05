@@ -16,7 +16,7 @@
         <img  class="logo" src="images/black-cat-logo.png">
         <img class="wa" src="images/wa.png">
       </div>
-      <div style="width:100%;height:6px;background-color: #c19898;"></div>
+      <div class="horizontal-rule"></div>
 
     </div>
     <section>
@@ -29,11 +29,15 @@
             <img class="quotes" src="images/q6.png">
       </div>
       <script>
-        var setDivHeight = document.getElementById("disp-img");
-        var imgheight = document.getElementById("imgq1");
+        function resizer() {
+          var setDivHeight = document.getElementById("disp-img");
+          var imgHeight = document.getElementById("imgq1");
+          setDivHeight.style.height = imHeight.height + 'px';
+        }
 
-        setDivHeight.style.height = imgheight.height + "px";
+        window.addEventListener("resize", resizer);
 
+        resizer()
       </script>
       <script>
         startImageTransition();
@@ -76,7 +80,7 @@
                 return new Promise(function(resolve, reject) {
                     var del = 0.01;
   
-                    var id = setInterval(changeOpacity, 10);
+                    var id = setInterval(changeOpacity, 50);
   
                     function changeOpacity() {
                         images[cur].style.opacity -= del;
@@ -92,11 +96,49 @@
     </script>
     </section>
 
-    <div style="width:100%;height:6px;background-color: #c19898;"></div>
+    <div class="horizontal-rule"></div>
 
     <section>
-      <div class="intro">
-        <div>Introduction:</div>
+      <div class="subjects">
+        <table align="center">
+          <tbody>
+            
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Basic Electronics Engg</a></td>
+            </tr>
+
+            <tr>
+              <td class="type-row-2"></td>
+            </tr>
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Basic Mechanical Engg</a></td>
+            </tr>
+            <tr>
+              <td class="type-row-2"></td>
+            </tr>
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Engineering Graphics</a></td>
+            </tr>
+            <tr>
+              <td class="type-row-2"></td>
+            </tr>
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Environmental Studies</a></td>
+            </tr>
+            <tr>
+              <td class="type-row-2"></td>
+            </tr>
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Language Lab & Seminars</a></td>
+            </tr>
+            <tr>
+              <td class="type-row-2"></td>
+            </tr>
+            <tr>
+              <td class="type-row-1"><a class="anchor" href="">Mathematics-II</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     
