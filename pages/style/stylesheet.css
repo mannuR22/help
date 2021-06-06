@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+    background-color: #231e23;
+}
+
+div.main-div{
+    background: #39a6a3;
+    width: 100%;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.text-center {
+    color: #deeeea;
+    font-size: 35px;
+    font-family: 'Mulish', sans-serif;
+}
+header {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+main {
+    width: 100%;
+    text-align: center;
+    padding-top: 0px;
+}
+.topics {
+    text-align: left;
+    width: 90%;
+}
+
+div.text {
+    color: #bf1363;
+    font-family: 'Cairo', sans-serif;
+    font-size: xx-large;
+}
+.line {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1px;
+    background-color: #deeeea;
+}
+
+li {
+    color:#deeeea;
+    font-size: 24px;
+}
+a:link {
+    color: #deeeea;
+    font-size: 24px;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: none;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #bf1363;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: none;
+    background-color: transparent;
+    text-decoration: none;
+  }
