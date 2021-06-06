@@ -57,7 +57,7 @@ a:link {
   }
   
   a:visited {
-    color: none;
+    color: #deeeea;
     background-color: transparent;
     text-decoration: none;
   }
@@ -69,7 +69,7 @@ a:link {
   }
   
   a:active {
-    color: none;
+    color: #deeeea;
     background-color: transparent;
     text-decoration: none;
   }
