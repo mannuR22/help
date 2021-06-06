@@ -10,7 +10,7 @@
         <header style="width: 100%; display: block; text-align: center;">
             <div class="main-div">
                 <div class="text-center">
-                    Basic Electronics Engg
+                    Environmental Studies
                 </div>
             </div>
             <div class = "line" style="margin-top: 0px;"></div>
@@ -22,7 +22,7 @@
                 <section class="topics">
                 <div class="text">ASSIGNMENTS</div>
                 <ol>
-                    <li><a href="https://drive.google.com/file/d/1Dy5ujAarPzMfH4F8Hi52uE4Te7m99nGk/view">Assignment-1</a></li>
+                    <li><p id="blink4" class="blink">COMMING SOON!</p></li>
                 </ol>
                 </section>
 
@@ -73,6 +73,10 @@
 
             setInterval(function(){
                 var text = document.getElementById("blink3");
+                text.style.opacity = (text.style.opacity == '1'? '0':'1');
+            }, 500);
+            setInterval(function(){
+                var text = document.getElementById("blink4");
                 text.style.opacity = (text.style.opacity == '1'? '0':'1');
             }, 500);
 

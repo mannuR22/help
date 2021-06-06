@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 body {
     background-color: #231e23;
@@ -49,9 +50,15 @@ li {
     color:#deeeea;
     font-size: 24px;
 }
+p.blink {
+    color: #deeeea;
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+}
 a:link {
     color: #deeeea;
     font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
     background-color: transparent;
     text-decoration: none;
   }
